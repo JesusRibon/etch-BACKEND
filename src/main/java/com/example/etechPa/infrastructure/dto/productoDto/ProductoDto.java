@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "productos")
 public class ProductoDto {
   @Id
+  @Column(name = "id_producto" , length = 10 )
   private String idProducto;
   @Column(name = "nombre" ,length = 30 ,nullable = false)
   private String nombre;
