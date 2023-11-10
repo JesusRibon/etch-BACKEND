@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 @Service
 public class ProductoDeleteAdapter implements ProductoDeleteService {
+
   private final ProductoRepository productoRepository;
   @Override
   public void deleteProducto(String idProducto) {

@@ -17,7 +17,7 @@ public class ProductoDto {
   @Id
   @Column(name = "id_producto" , length = 10 )
   private String idProducto;
-  @Column(name = "nombre" ,length = 30 ,nullable = false)
+  @Column(name = "nombre" ,nullable = false)
   private String nombre;
   @Column(name = "descripcion" ,length = 200 , nullable = false)
   private String descripcion;
@@ -27,6 +27,8 @@ public class ProductoDto {
   private  boolean disponibilidad;
   @Column(name = "cantidad" , nullable = false)
   private int cantidad;
+  @Column(name = "urlImg")
+  private String urlImg;
 
 
 }

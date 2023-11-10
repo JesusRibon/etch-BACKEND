@@ -29,4 +29,5 @@ public class UsuarioDto {
   @Column(name = "password" , length = 50)
   private String password;
 
+
 }

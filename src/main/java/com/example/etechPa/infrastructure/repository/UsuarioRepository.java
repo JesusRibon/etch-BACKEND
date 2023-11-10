@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<UsuarioDto , String> {
-  @Query(nativeQuery = true , value = "update usuarios set nombre = :nombre , apellido = :apellido , direccion = :direccion , telefono = :telefono, email = :email , password = :password where id_usuario = :id_usuario")
+  @Query(nativeQuery = true , value = "update usuarios set nombre = :nombre , apellido = :apellido , direccion = :direccion , telefono = :telefono, email = :email , password = :password  where id_usuario = :id_usuario")
   @Modifying
   void updateUsuario(@Param("id_usuario") String id_usuario,
                      @Param("nombre") String nombre,

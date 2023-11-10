@@ -30,6 +30,6 @@ public class UsuarioGetAdapter implements UsuarioGetService {
 
 
   private  Usuario buildUsuario(UsuarioDto usuario){
-    return new Usuario(usuario.getIdUsuario() , usuario.getNombre(), usuario.getApellido(), usuario.getDireccion() , usuario.getTelefono(), usuario.getEmail(), usuario.getPassword());
+    return new Usuario(usuario.getIdUsuario() , usuario.getNombre(), usuario.getApellido(), usuario.getDireccion() , usuario.getTelefono(), usuario.getEmail(), usuario.getPassword() );
   }
 }

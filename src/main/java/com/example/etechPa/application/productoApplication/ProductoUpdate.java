@@ -23,7 +23,8 @@ public class ProductoUpdate implements ProductoUpdateService {
           producto.getDescripcion(),
           producto.getPrecio(),
           producto.isDisponibilidad(),
-          producto.getCantidad());
+          producto.getCantidad(),
+          producto.getUrlImg());
     }else{
       throw new ClienteExeption("El producto que desea actualizar no existe");
     }

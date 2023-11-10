@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @Service
-public class ProductoGetAdapter implements ProductoGetService {
+public class  ProductoGetAdapter implements ProductoGetService {
   private final ProductoRepository productoRepository;
   private final ProductoMapper productoMapper;
 
@@ -30,6 +30,6 @@ public class ProductoGetAdapter implements ProductoGetService {
 
 
   private Producto buildProducto(ProductoDto producto) {
-      return new Producto(producto.getIdProducto() , producto.getNombre(), producto.getDescripcion() , producto.getPrecio() , producto.isDisponibilidad() , producto.getCantidad());
+      return new Producto(producto.getIdProducto() , producto.getNombre(), producto.getDescripcion() , producto.getPrecio() , producto.isDisponibilidad() , producto.getCantidad(), producto.getUrlImg());
   }
 }

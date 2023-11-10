@@ -14,8 +14,9 @@ public class Producto {
   private String nombre;
   private String descripcion;
   private float precio;
-  private  boolean disponibilidad;
+  private boolean disponibilidad;
   private int cantidad;
+  private String urlImg;
 
 
 }

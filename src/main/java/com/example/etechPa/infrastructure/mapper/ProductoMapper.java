@@ -15,6 +15,7 @@ public interface ProductoMapper {
   @Mapping(target = "precio" , source = "precio")
   @Mapping(target = "disponibilidad" , source = "disponibilidad")
   @Mapping(target = "cantidad" , source = "cantidad")
+  @Mapping(target = "urlImg" , source = "urlImg")
 
 
   Producto toProductoEntity(ProductoDto productoDto);
